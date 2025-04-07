@@ -1,0 +1,122 @@
+Sure! Here's a complete HTML file that combines HTML, CSS, and a bit of JavaScript into one file. It displays your resume with a clean and modern layout:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>R. Sanjay - Resume</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4;
+      color: #333;
+    }
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      background: #fff;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      padding: 30px;
+      border-radius: 10px;
+    }
+    h1, h2 {
+      color: #0073e6;
+    }
+    .section {
+      margin-bottom: 30px;
+    }
+    .label {
+      font-weight: bold;
+      color: #0073e6;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    .contact, .languages {
+      margin-bottom: 15px;
+    }
+    .toggle-btn {
+      background-color: #0073e6;
+      color: white;
+      border: none;
+      padding: 8px 12px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .reference-content {
+      display: none;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>R. Sanjay</h1>
+
+    <div class="section contact">
+      <h2>Contact</h2>
+      <p><span class="label">Mobile:</span> 7200992691</p>
+      <p><span class="label">Email:</span> sanjaysarathi2005@gmail.com</p>
+    </div>
+
+    <div class="section languages">
+      <h2>Languages</h2>
+      <p>English</p>
+    </div>
+
+    <div class="section skills">
+      <h2>Skills</h2>
+      <ul>
+        <li><strong>Active Listening & Collaboration:</strong> Strong listener, capable of understanding diverse perspectives and building meaningful relationships with team members.</li>
+        <li><strong>Technical Proficiency:</strong> Well versed in program comprehension and problem solving in software development contexts.</li>
+        <li><strong>Event Coordination:</strong> Proven ability to organize departmental activities and events, balancing multiple responsibilities effectively.</li>
+      </ul>
+    </div>
+
+    <div class="section education">
+      <h2>Education</h2>
+      <p><strong>B.Sc (Computer Science)</strong>, Madras University</p>
+      <p>2023 – 2026</p>
+    </div>
+
+    <div class="section achievements">
+      <h2>Achievements & Awards</h2>
+      <ul>
+        <li>Code Hack-thon</li>
+        <li>English Communication</li>
+      </ul>
+    </div>
+
+    <div class="section reference">
+      <h2>Reference</h2>
+      <button class="toggle-btn" onclick="toggleReference()">Show Reference</button>
+      <div class="reference-content" id="refContent">
+        <p>No reference details provided.</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function toggleReference() {
+      const ref = document.getElementById("refContent");
+      const isVisible = ref.style.display === "block";
+      ref.style.display = isVisible ? "none" : "block";
+    }
+  </script>
+</body>
+</html>
+
+How to Use:
+
+1. Copy the code into a .html file (e.g., resume.html).
+
+
+2. Open it in any browser to view your resume with styling and a small interactive button.
+
+
+
+Let me know if you want to add more features like a downloadable PDF button, animations, or light/dark theme toggle!
+
